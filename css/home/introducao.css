@@ -1,0 +1,69 @@
+.introducao-bg {
+  background: var(--cor-12);
+  box-shadow: inset 0 -120px var(--cor-0); /*inset é uma sombra interna, p dentro do elemento*/
+}
+
+.introducao {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0px 40px; /*cima e baixo 0px e para os lados 40px*/
+  /* box-sizing: border-box;
+  max-width: 1200px;  depois da pagina crescer mais de 1200px o elemente fica no caminho, use margin auto!
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto; Mto importante para os elementos n ficarem p trás quando crescer tela
+  margin-right: auto; ai eles vão se alinha sempre ao centro, mto importante! */
+}
+/* .introducao p,
+a {
+  grid-column: 1;
+} */
+
+/*.introducao img {
+  grid-row: 1/3; com isso o problema é que a img pula p a segunda coluna
+  grid-column: 2;   aqui eu jogo a imagem de novo para a segunda coluna certinho
+}
+*/
+
+.introducao-conteudo {
+  align-self: end;
+  padding-bottom: 200px;
+}
+
+/* .introducao-img {
+  margin-bottom: -120px;    é uma solução, porém não a ideal, pq prejudica os elemento abaixo
+} */
+
+.introducao img {
+  width: 100%;
+  height: 100%; /*além de anular o margin bottom, tb distorce a imagem ao diminuir tela*/
+  object-fit: cover; /*com isso a imagem não é distorcida ao diminuir tela*/
+  /*margin-bottom: -120px; porém ao diminuir a tela,a imagem tb diminui e fica minuscula, use na div que segura a img */
+  border-radius: 4px;
+}
+
+.introducao h1 {
+  margin-bottom: 32px;
+}
+
+.introducao p {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 800px) {
+  .introducao-bg {
+    background: var(--cor-11);
+    padding-top: 40px;
+    box-shadow: inset 0 -60px #ffffff;
+  }
+  .introducao {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .introducao-conteudo {
+    padding-bottom: 0px;
+  }
+  .introducao h1 {
+    margin-bottom: 16px;
+  }
+}

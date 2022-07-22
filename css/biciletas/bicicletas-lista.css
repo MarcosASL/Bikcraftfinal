@@ -1,0 +1,62 @@
+.bicicletas-lista {
+  padding-top: 60px;
+  padding-bottom: 120px;
+}
+.bicicletas-lista h2 {
+  margin-bottom: 40px;
+}
+
+.bicicletas-lista ul {
+  display: flex; /*itens lado a lado*/
+  gap: 40px; /*espaço entre as fotos*/
+  padding: 0 20px 20px 20px; /*desgrudar das bordas da página*/
+  /*quis que ele vazase o container e ficasse maior mesmo, porém vai ter o limete de 1400*/
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow-x: auto; /*crio um scroll nessa lista do site, mas só na horizontal (eixo-x)*/
+}
+.bicicletas-lista li {
+  flex: 1; /*MTO IMPORTANTE! SE NÃO DEFINIR ELE COMO FLEXIVEL, NÃO VAI FICAR MAIS NO TAMANHO CERTO*/
+  min-width: 280px; /*vai ter no minimo 280px, quando chegar nesse tamanho ele vai quebrar*/
+}
+
+.bicicletas-lista a {
+  display: block;
+}
+.bicicletas-lista img {
+  /*distanciar o texto da imagem*/
+  margin-bottom: 16px;
+}
+
+.bicicletas-lista h3 {
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.bicicletas-lista h3::before {
+  content: "";
+  display: inline-block;
+  height: 8px;
+  width: 12px;
+  margin-right: 8px;
+  background-color: var(--cor-p1);
+  transition: width 0.2s;
+}
+.bicicletas-lista a:hover h3::before {
+  width: 24px;
+}
+
+.bicicletas-lista li span {
+  padding-left: 20px;
+}
+
+@media (max-width: 800px) {
+  .bicicletas-lista {
+    padding-bottom: 60px;
+  }
+  .bicicletas-lista ul {
+    gap: 20px;
+  }
+}

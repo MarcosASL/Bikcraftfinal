@@ -1,0 +1,37 @@
+body {
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #111111;
+  /*padding-bottom: 600px; TIRAR DAQUI DEPOIS, É APENAS PROVISORIO*/
+}
+
+h1,
+h2,
+h3,
+h4,
+ul,
+p,
+blockquote {
+  margin: 0px;
+}
+
+ul {
+  padding: 0px;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit; /*SIGNIFICA QUE ELE VAI HERDAR A COR DO PAI DELE*/
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/*seletor de atributo, só seleciona elemento que tiverem SRC e termina com um valor especifico, no caso é a JPG
+então tudo que tiver SRC nele e terminar com a palavra JPG, vai acrescentar o valor abaixo*/
+img[src$=".jpg"] {
+  border-radius: 4px;
+}

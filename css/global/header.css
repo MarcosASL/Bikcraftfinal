@@ -1,0 +1,66 @@
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/*todo -bg que eu tiver no site, será um background que se expande ponta a ponta */
+.header-bg {
+  background-color: var(--cor-12);
+}
+
+.header-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.header-menu a {
+  display: inline-block;
+  padding: 16px 0px; /*p aumentar a area de contato do botão*/
+  position: relative; /*o de baixo vai ficar relativo a esse elemento*/
+}
+.header-menu a:after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0px; /*sem passar mouse fica em 0% de largura*/
+  background: var(--cor-0);
+  margin-top: 4px; /*distancia do pai*/
+  transition: 0.3s;
+  position: absolute; /*vai ficar relacionado ao elementopai com position relative,se n tiver, fica em relação ao body*/
+}
+
+.header-menu a:hover:after {
+  width: 100%; /*fica exatamaneto na largura do pai, ao passar o mouse */
+}
+
+@media (max-width: 800px) {
+  .header-menu {
+    gap: 20px;
+  }
+  .header-menu a {
+    background: var(--cor-11);
+    padding: 12px 16px;
+    border-radius: 4px;
+  }
+  .header-menu a:hover {
+    background: var(--cor-10);
+  }
+  .header a:after {
+    display: none; /*aqui eu tiro a linha sublinhado ao passa mouse, pq nesse tamanho já vaza o link*/
+  }
+}
+
+@media (max-width: 600px) {
+  .header-menu {
+    gap: 12px;
+  }
+  .header-menu a {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+}
