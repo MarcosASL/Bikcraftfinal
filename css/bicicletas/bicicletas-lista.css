@@ -16,6 +16,11 @@
   margin-right: auto;
   overflow-x: auto; /*crio um scroll nessa lista do site, mas só na horizontal (eixo-x)*/
 }
+
+#bicicleta .bicicletas-lista ul {
+  padding: 0px 0px 20px 0px;
+}
+
 .bicicletas-lista li {
   flex: 1; /*MTO IMPORTANTE! SE NÃO DEFINIR ELE COMO FLEXIVEL, NÃO VAI FICAR MAIS NO TAMANHO CERTO*/
   min-width: 280px; /*vai ter no minimo 280px, quando chegar nesse tamanho ele vai quebrar*/

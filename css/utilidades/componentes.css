@@ -16,6 +16,8 @@
   color: var(--cor-p5);
   font: 600 1.125rem/1.35 "Poppins", sans-serif;
   max-width: max-content; /* o conteudo vai ter o tamanho máximo dele só, se a foto ou o botão estiver maior do que ele é, pq vc esticou com algum parametro, basta usar o max-content!*/
+  border: none;
+  cursor: pointer;
 }
 
 .botao:hover {
