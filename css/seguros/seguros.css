@@ -11,6 +11,11 @@
   align-items: center;
 }
 
+#seguros .seguros {
+  /*quando estiver dentro do id seguros, vou pegar o .seguros e tirar o padding-top*/
+  padding-top: 0px;
+}
+
 .seguros h2 {
   grid-column: 1/-1; /*fiz o h2 se expandir de ponta a ponta, e isso fez os elementos que estavam ao lado, serem jogados p baixo!*/
 }
@@ -20,6 +25,7 @@
   padding: 32px 32px 32px 60px;
   display: grid;
   grid-template-columns: 1fr auto;
+  border-radius: 4px;
 }
 
 .seguros-item h3 {

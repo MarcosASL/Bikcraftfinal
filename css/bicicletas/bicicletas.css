@@ -1,5 +1,10 @@
+/*Aqui eu crio e ilusão da bicileta magic might saindo da tela*/
 .bicicletas-bg {
-  background: var(--cor-11);
+  background-image: linear-gradient(
+    to right,
+    var(--cor-0) 30%,
+    var(--cor-11) 0%
+  );
 }
 
 .bicicletas {
@@ -30,6 +35,7 @@
 .bicicletas-conteudo {
   display: grid;
   grid-template-columns: 1fr auto;
+  align-content: start; /*para não criar o espaço entre as linhas ao crescer página*/
 }
 
 .bicicletas h2,
@@ -70,4 +76,30 @@
 .bicicletas-conteudo img {
   width: 24px;
   margin-right: 8px;
+}
+
+@media (max-width: 800px) {
+  .bicicletas-bg {
+    background: var(--cor-11);
+  }
+  .bicicletas {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .bicicletas-conteudo {
+    grid-template-columns: 1fr;
+  }
+  .bicicletas ul {
+    font-size: 1rem;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 32px;
+  }
+  .bicicletas a {
+    place-self: start;
+  }
 }
