@@ -6,7 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contato - Bikcraft</title>
   <meta name="description" content="Termos e Condições.">
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="preload" href="./css/style.css" as="style">
+  <link rel="stylesheet" href="./css/style.css">
   <!-- abaixo são as font do google que usei no meu site -->
 </head>
 
@@ -14,7 +15,7 @@
   <header class="header-bg">
     <div class="header container">
       <!-- O ./ significa a home do site, n precisa escrever index.html. ele já sabe e vai caçar  -->
-      <a href="./"><img src="./img/bikcraft.svg" alt="bikcraft"></a>
+      <a href="./"><img src="./img/bikcraft.svg" width="136" height="32" alt="bikcraft"></a>
       <nav aria-label="primaria">
         <ul class="header-menu font-1-m cor-0">
           <li><a href="./bicicletas.html">Bicicletas</a></li>
@@ -49,13 +50,19 @@
 
         <div class="contato-redes">
           <a href="./">
-            <img src="./img/redes/instagram-p.svg" alt="Instagram">
+            <picture>
+              <img src="./img/redes/instagram-p.svg" width="32" height="32" alt="Instagram">
+            </picture>
           </a>
           <a href="./">
-            <img src="./img/redes/facebook-p.svg" alt="Facebook">
+            <picture>
+              <img src="./img/redes/facebook-p.svg" width="32" height="32" alt="Facebook">
+            </picture>
           </a>
           <a href="./">
-            <img src="./img/redes/youtube-p.svg" alt="Youtube">
+            <picture>
+              <img src="./img/redes/youtube-p.svg" width="32" height="32" alt="Youtube">
+            </picture>
           </a>
         </div>
 
@@ -96,7 +103,9 @@
     <h2 class="font-1-xxl">Lojas locais<span class="cor-p1">.</span></h2>
 
     <div class="lojas-item">
-      <img src="./img/lojas/rj.jpg" alt="mapa marcando o endereço em Rua Ali perto, 25 - Rio de janeiro - RJ">
+      <picture>
+        <img src="./img/lojas/rj.jpg" width="1120" height="520" alt="mapa marcando o endereço em Rua Ali perto, 25 - Rio de janeiro - RJ">
+      </picture>
       <div class="lojas-conteudo">
         <h3 class="font-1-xl">Rio de Janeiro</h3>
         <div class="lojas-dados font-2-s cor-8">
@@ -107,14 +116,16 @@
           <a href="mailto:RJ@bikcraft.com">rj@bikcraft.com</a>
           <a href="tel:+552199999999">+55 21 9999-9999</a>
         </div>
-        <p class="lojas-tempo font-1-s"><img src="./img/icones/horario.svg" alt=""> 08-18h de seg à dom</p>
+        <p class="lojas-tempo font-1-s"><img src="./img/icones/horario.svg" width="20" height="20" alt=""> 08-18h de seg à dom</p>
       </div>
     </div>
 
 
 
     <div class="lojas-item">
-      <img src="./img/lojas/sp.jpg" alt="mapa marcando o endereço em Rua Ali perto, 25 - São Paulo - SP">
+      <picture>
+        <img src="./img/lojas/sp.jpg" width="1120" height="520" alt="mapa marcando o endereço em Rua Ali perto, 25 - São Paulo - SP">
+      </picture>
       <div class="lojas-conteudo">
         <h3 class="font-1-xl">São Paulo</h3>
         <div class="lojas-dados font-2-s cor-8">
@@ -125,7 +136,7 @@
           <a href="mailto:sp@bikcraft.com">sp@bikcraft.com</a>
           <a href="tel:+551199999999">+55 11 9999-9999</a>
         </div>
-        <p class="lojas-tempo font-1-s"><img src="./img/icones/horario.svg" alt=""> 08-18h de seg à dom</p>
+        <p class="lojas-tempo font-1-s"><img src="./img/icones/horario.svg" width="20" height="20" alt=""> 08-18h de seg à dom</p>
       </div>
     </div>
   </article>
@@ -133,7 +144,9 @@
 
   <footer class="footer-bg">
     <div class="footer container">
-      <img src="./img/bikcraft.svg" alt="Bikcraft">
+      <picture>
+        <img src="./img/bikcraft.svg" width="136" height="32" alt="Bikcraft">
+      </picture>
       <div class="footer-contato">
         <h3 class="font-2-1-b cor-0">Contato</h3>
         <ul class="font-2-m cor-5">

@@ -6,7 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Termos e Condições - Bikcraft</title>
   <meta name="description" content="Termos e Condições.">
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="preload" href="./css/style.css" as="style">
+  <link rel="stylesheet" href="./css/style.css">
   <!-- abaixo são as font do google que usei no meu site -->
 </head>
 
@@ -14,7 +15,7 @@
   <header class="header-bg">
     <div class="header container">
       <!-- O ./ significa a home do site, n precisa escrever index.html. ele já sabe e vai caçar  -->
-      <a href="./"><img src="./img/bikcraft.svg" alt="bikcraft"></a>
+      <a href="./"><img src="./img/bikcraft.svg" width="136" height="32" alt="bikcraft"></a>
       <nav aria-label="primaria">
         <ul class="header-menu font-1-m cor-0">
           <li><a href="./bicicletas.html">Bicicletas</a></li>
@@ -51,7 +52,9 @@
 
   <footer class="footer-bg">
     <div class="footer container">
-      <img src="./img/bikcraft.svg" alt="Bikcraft">
+      <picture>
+        <img src="./img/bikcraft.svg" width="136" height="32" alt="Bikcraft">
+      </picture>
       <div class="footer-contato">
         <h3 class="font-2-1-b cor-0">Contato</h3>
         <ul class="font-2-m cor-5">
@@ -62,13 +65,19 @@
         </ul>
         <div class="footer-redes">
           <a href="./">
-            <img src="./img/redes/instagram.svg" alt="Instagram">
+            <picture>
+              <img src="./img/redes/instagram.svg" width="32" height="32" alt="Instagram">
+            </picture>
           </a>
           <a href="./">
-            <img src="./img/redes/facebook.svg" alt="Facebook">
+            <picture>
+              <img src="./img/redes/facebook.svg" width="32" height="32" alt="Facebook">
+            </picture>
           </a>
           <a href="./">
-            <img src="./img/redes/youtube.svg" alt="Youtube">
+            <picture>
+              <img src="./img/redes/youtube.svg" width="32" height="32" alt="Youtube">
+            </picture>
           </a>
         </div>
       </div>
