@@ -17,15 +17,19 @@
   /*odd são os itens imparares*/
   background-color: var(--cor-1);
 }
-.perguntas dt {
+.perguntas button {
   display: grid;
   grid-template-columns: auto 1fr auto; /*auto= tamanho da img, 1fr= cresce até quanto der. auto= tamanho da img, tb poderia usar outras formas p posicionar esses icones, como after,before, position absolut etc */
   align-items: center;
   gap: 8px;
   cursor: pointer;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
 }
 
-.perguntas dt::before {
+.perguntas button::before {
   content: "";
   display: inline-block;
   width: 12px;
@@ -33,7 +37,7 @@
   background-color: var(--cor-p1);
 }
 
-.perguntas dt::after {
+.perguntas button::after {
   content: "";
   display: inline-block;
   width: 14px;
@@ -42,8 +46,20 @@
   transition: 0.3s;
 }
 
-.perguntas dt:hover::after {
+/*quando estiver no aria-expanded="true" que eu criei no html dele, eu falo no after dele com isso
+as setinhas dos textos já ativos vão ficar p baixo */
+.perguntas button:hover::after,
+.perguntas button[aria-expanded="true"]::after {
   transform: rotate(180deg);
+}
+
+.js .perguntas dd {
+  display: none; /*aqui eu escondo as respostas das pergunta*/
+}
+
+.js .perguntas dd.ativa {
+  /*as que tiverem a classe 'ativa' vão ser display block e vão aparecer*/
+  display: block;
 }
 
 .perguntas dd {

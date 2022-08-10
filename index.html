@@ -6,14 +6,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bikcraft - Bicicletas Elétricas</title>
   <meta name="description" content="Bicicletas elétricas de alta precisão e qualidade,  feitas sob medida para o cliente. Explore o mundo na sua velocidade com a Bikcraft.">
+  <!-- abaixo é como se coloca o meu Favicon do site -->
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
   <!-- link p carregar o css primeiro -->
-  <link rel="preload" href="./css/style.css" as="style">
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="preload" href="./css/style.min.css" as="style">
+  <link rel="stylesheet" href="./css/style.min.css">
+
+  <script> document.documentElement.classList.add("js");  </script>
   <!-- abaixo são as font do google que usei no meu site -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&family=Poppins:wght@500;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 </head>
+
 
 <body>
   <header class="header-bg">
@@ -33,11 +38,11 @@
   <main class="introducao-bg">
     <div class="introducao container">
       <div class="introducao-conteudo">
-        <h1 class="font-1-xxl cor-0">Bicicletas feitas sob medida<span class="cor-p1">.</span></h1>
-        <p class="font-2-l cor-5">Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para você. Explore o mundo na sua velocidade com a Bikcraft.</p>
-        <a class="botao" href="./bicicetas.html">Escolha a sua</a>
+        <h1 class="font-1-xxl cor-0 fadeInDown" data-anime="200">Bicicletas feitas sob medida<span class="cor-p1">.</span></h1>
+        <p class="font-2-l cor-5 fadeInDown" data-anime="400">Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para você. Explore o mundo na sua velocidade com a Bikcraft.</p>
+        <a class="botao fadeInDown" data-anime="600" href="./bicicletas.html">Escolha a sua</a>
       </div>
-      <picture>
+      <picture data-anime="800" class="fadeInDown">
         <img src="./img/fotos/introducao.jpg" width="1280" height="1600" alt="Bicicleta elétrica preta">
       </picture>
     </div>
@@ -48,7 +53,7 @@
     <h2 class="container font-1-xxl">Escolha a sua<span class="cor-p1">.</span></h2>
     <ul>
       <li>
-        <a href="./bicicletas/magic.jpg">
+        <a href="./bicicletas/magic.html">
           <picture>
             <img src="/img/bicicletas/magic-home.jpg" width="920" height="1040" alt="Bicileta preta">
           </picture>
@@ -143,7 +148,7 @@
           <li>Suporte 08h às 18h</li>
           <li>Cobertura estadual</li>
         </ul>
-        <a class="botao secundario" href="./orcamento.html">Inscreva-se</a>
+        <a class="botao secundario" href="./orcamento.html?tipo=seguro&produto=prata">Inscreva-se</a>
       </div>
 
       <div class="seguros-item">
@@ -157,7 +162,7 @@
           <li>Desconto em parceiros</li>
           <li>Acesso ao Clube Bikcraft</li>
         </ul>
-        <a class="botao" href="./orcamento.html">Inscreva-se</a>
+        <a class="botao" href="./orcamento.html?tipo=seguro&produto=ouro">Inscreva-se</a>
       </div>
     </div>
   </article>
@@ -201,6 +206,8 @@
     </div>
   </footer>
 
+  <script src="./js/plugins/simple-anime.js"></script>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>

@@ -34,8 +34,10 @@
   position: absolute; /*vai ficar relacionado ao elementopai com position relative,se n tiver, fica em relação ao body*/
 }
 
-.header-menu a:hover:after {
-  width: 100%; /*fica exatamaneto na largura do pai, ao passar o mouse */
+.header-menu a:hover:after,
+.header-menu a.ativo::after {
+  /* quando o a.ativo estiver ativo (quando vc estiver na página do link) vc vai manter o sublinhado do texto */
+  width: 100%; /*fica exatamente na largura do pai, ao passar o mouse */
 }
 
 @media (max-width: 800px) {

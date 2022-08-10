@@ -6,9 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Orçamento - Bikcraft</title>
   <meta name="description" content="Termos e Condições.">
-  <link rel="preload" href="./css/style.css" as="style">
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="./css/style.min.css" as="style">
+  <link rel="stylesheet" href="./css/style.min.css">
   <!-- abaixo são as font do google que usei no meu site -->
+  <script> document.documentElement.classList.add("js");  </script>
+  <!-- abaixo são as font do google que usei no meu site -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&family=Poppins:wght@500;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 </head>
 
 <body id="orcamento">
@@ -36,6 +42,7 @@
 
 
     <form class="orcamento container" action="./">
+      <!-- aqui abaixo é o seguro -->
       <div class="orcamento-produto">
         <h2 class="font-1-xs cor-5">Bikcraft ou Seguro?</h2>
 
@@ -43,7 +50,7 @@
         <label for="bikcraft">Bikcraft</label>
 
         <input type="radio" name="tipo" value="seguro" id="seguro">
-        <label for="seguro">seguro</label>
+        <label for="seguro">Seguro</label>
 
         <div class="orcamento-conteudo" id="orcamento-bikcraft">
           <h2 class="font-1-xs cor-5">Escolha a sua</h2>
@@ -90,14 +97,14 @@
           </div>
         </div>
 
-        <div class="orcamento-conteudo" id="ocamento-seguro">
+        <div class="orcamento-conteudo" id="orcamento-seguro">
           <h2 class="font-1-xs cor-5">Escolha o plano</h2>
 
           <input type="radio" name="produto" value="prata" id="prata">
-          <label for="prata">PRATA <span>R$ 199</span></label>
+          <label for="prata">Prata <span>R$ 199</span></label>
 
           <input type="radio" name="produto" value="ouro" id="ouro">
-          <label for="ouro">OURO <span>R$ 299</span></label>
+          <label for="ouro">Ouro <span>R$ 299</span></label>
 
         </div>
 
@@ -192,6 +199,7 @@
     </div>
   </footer>
 
+  <script src="./js/script.js"></script>
 </body>
 
 </html>
