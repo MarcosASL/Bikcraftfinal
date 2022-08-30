@@ -14,7 +14,7 @@ otimização de imagens e arquivos CSS, SEO e utilização do Google Analytics.
 - HTML5
 - CSS3
 - JavaScript (com o plugin SimpleAnime)
-- PHP (envio de e-mail com SendGrid) (em progeso)
+- PHP (envio de e-mail com SendGrid) (em progresso)
 
 
 
@@ -22,11 +22,11 @@ otimização de imagens e arquivos CSS, SEO e utilização do Google Analytics.
 Você pode acessar o projeto clicando  [aqui.](https://projetobikecraft.netlify.app/bicicletas.html) 👈
  
 ## Layout final
-<img src="https://github.com/MarcosASL/assets/blob/main/projetobikecraft-netlify-app-2022-08-30-11_15_50.png" width="1600" height="5118">
+<img src="https://github.com/MarcosASL/assets/blob/main/projetobikecraft-netlify-app-2022-08-30-11_15_50.png" width="310" height="998">
 
 
 
-Desenvolvido  por Marcos Antonio.
+# Desenvolvido  por Marcos Antonio.
 
 
 
