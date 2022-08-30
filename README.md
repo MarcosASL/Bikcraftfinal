@@ -19,7 +19,7 @@ otimização de imagens e arquivos CSS, SEO e utilização do Google Analytics.
 
 
 # 🖥️Demonstração
-Você pode acessar o projeto clicando  [aqui.](https://projetobikecraft.netlify.app/bicicletas.html) 👈
+Você pode acessar o projeto clicando  [aqui.](https://projetobikecraft.netlify.app/) 👈
  
 ## Layout final
 <img src="https://github.com/MarcosASL/assets/blob/main/projetobikecraft-netlify-app-2022-08-30-11_15_50.png" width="310" height="998">
